@@ -9,7 +9,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context="in.ac.iiitd.psingh.mc16.objectivequiz.QuizActivity"
     android:weightSum="1"
     android:background="#d7e023">
 
