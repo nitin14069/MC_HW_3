@@ -84,7 +84,9 @@ public class AddActivity extends Activity {
                 File fileToWrite;
                 FileOutputStream fos2;
                 DataOutputStream dos2;
-                try {
+                if (Environment.MEDIA_MOUNTED.equals(Environment.getExternalStorageState()))
+                {
+                     try {
                     //fos = openFileOutput(getString(R.string.FileName), Context.MODE_PRIVATE);
                     fileToWrite = new File(dirExternal,getString(R.string.FileName));
 
@@ -92,8 +94,15 @@ public class AddActivity extends Activity {
                     dos2.writeChars(t1 + " " + t2 + "\n");
 
                     dos2.close();
-                } catch (Exception e) {
-                    e.printStackTrace();
+                    }
+                    catch (Exception e)
+                    {
+                        e.printStackTrace();
+                    }
+                }
+                else
+                {
+                    Toast.makeText(AddActivity.this," Added to Internal storage and DataBase....External Storage Not Available !!!",Toast.LENGTH_LONG).show();
                 }
 
                 ContentValues entries = new ContentValues();
