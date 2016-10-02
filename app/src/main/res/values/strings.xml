@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">SaveData</string>
+    <string name="action_settings">Settings</string>
+    <string name="Add">Add/Update Investment</string>
+    <string name="Delete">Delete Investment</string>
+    <string name="View">View Investments</string>
+    <string name="title_activity_add">AddActivity</string>
+    <string name="AddItem">Add Item</string>
+    <string name="UpdateItem">Update Item</string>
+    <string name="title_activity_view">ViewActivity</string>
+    <string name="title_activity_delete">DeleteActivity</string>
+    <string name="DeleteItem">Delete Item</string>
+    <string name="DefaultCompany">Company</string>
+    <string name="DefaultDomain">Domain</string>
+    <string name="DefaultAmount">Amount</string>
+    <string name="ExtFileDir">Alo</string>
+    <string name="FileName">AloStats</string>
+
+</resources>
